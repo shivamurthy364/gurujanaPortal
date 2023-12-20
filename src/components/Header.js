@@ -1,18 +1,18 @@
 import { Fragment, useState } from 'react'
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
 import {
-  ArrowPathIcon,
+  // ArrowPathIcon,
   Bars3Icon,
-  ChartPieIcon,
+  // ChartPieIcon,
   CursorArrowRaysIcon,
-  FingerPrintIcon,
-  SquaresPlusIcon,
+  // FingerPrintIcon,
+  // SquaresPlusIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import { ChevronDownIcon } from '@heroicons/react/20/solid'
 
 const products = [
-  { name: 'Analytics', description: 'Get a better understanding of your traffic', href:"#", icon: ChartPieIcon },
+  // { name: 'Analytics', description: 'Get a better understanding of your traffic', href:"#", icon: ChartPieIcon },
   { name: 'Engagement', description: 'Speak directly to your customers',  href: "/login", icon: CursorArrowRaysIcon },
   // { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
   // { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
@@ -79,6 +79,7 @@ export default function Header() {
                         <a href={item.href} className="block font-semibold text-gray-900">
                           {item.name}
                           <span className="absolute inset-0" />
+
                         </a>
                         <p className="mt-1 text-gray-600">{item.description}</p>
                       </div>
@@ -107,9 +108,9 @@ export default function Header() {
           {/* <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
             Marketplace
           </a> */}
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          {/* <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
             Company
-          </a>
+          </a> */}
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           {/* <a href="" className="text-sm font-semibold leading-6 text-gray-900">
@@ -121,14 +122,14 @@ export default function Header() {
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
+            {/* <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <img
                 className="h-8 w-auto"
                 src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
                 alt=""
               />
-            </a>
+            </a> */}
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-gray-700"
@@ -166,24 +167,24 @@ export default function Header() {
                     </>
                   )}
                 </Disclosure>
-                <a
+                {/* <a
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Features
-                </a>
-                <a
+                </a> */}
+                {/* <a
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Marketplace
-                </a>
-                <a
+                </a> */}
+                {/* <a
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Company
-                </a>
+                </a> */}
               </div>
               {/* <div className="py-6">
                 <a
