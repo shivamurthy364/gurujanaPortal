@@ -1,13 +1,13 @@
-import { PhotoIcon, UserCircleIcon } from '@heroicons/react/24/solid'
-import Nationality from './Nationality'
+// import { PhotoIcon, UserCircleIcon } from '@heroicons/react/24/solid'
+// import Nationality from './Nationality'
 import { useState , useRef} from 'react'
 import StayDurationForm from './StayDurationForm';
 import NationalityVerification from './NationalityVerification';
 
 export default function IndividualFormComp() {
-    const [selectedOccupation, setSelectedOccupation] = useState('');
+    // const [selectedOccupation, setSelectedOccupation] = useState('');
     const [open, setOpen] = useState(true)
-    const [showOtherInput, setShowOtherInput] = useState(false);
+    // const [showOtherInput, setShowOtherInput] = useState(false);
     const cancelButtonRef = useRef(null)
     
   return (
